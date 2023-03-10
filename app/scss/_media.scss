@@ -1,0 +1,227 @@
+@media screen and (max-width: 1150px) {
+    section.feedback {
+        .feedback__card-list {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    header.header {
+        .nav__item {
+            display: none;
+        }
+
+        .nav__burger {
+            display: block;
+        }
+    }
+
+    section.about-us {
+        .about-us__item {
+            padding-left: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section.how-work {
+        .how-work__step-list {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section.banner {
+        min-height: calc(100vh + 110px);
+
+        .banner-form {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            &__btn {
+                width: 100%;
+            }
+        }
+    }
+
+    section.price {
+
+        .price__list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .price-card {
+            height: 270px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .price-card__price,
+        .price-card__title,
+        .price-card__time {
+            position: absolute;
+
+        }
+
+        .price-card__title {
+            top: 40px;
+            left: 60px;
+        }
+
+        .price-card__price {
+            top: 90px;
+            font-size: 80px;
+            left: 30px;
+        }
+
+        .price-card__time {
+            top: 200px;
+            left: 60px;
+        }
+
+
+        .price-card__descr-item {
+            width: 50%;
+        }
+
+        .price-card__btn {
+            box-sizing: border-box;
+            width: 50%;
+            text-align: center;
+
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    section.service {
+        .service__items {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    section.banner {
+        padding-top: 150px;
+        border-bottom: none;
+        min-height: 100vh;
+        height: auto;
+
+        .banner__title {
+            margin-bottom: 50px;
+        }
+
+        .banner__subtitle {
+            margin-bottom: 100px;
+            line-height: 30px;
+        }
+
+        .banner-form {
+            gap: 15px 10px;
+        }
+
+        .itc-slider {
+            display: none;
+        }
+    }
+
+    section.about-us {
+        .about-us__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .about-us__item {
+            padding: 20px 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section.newsletter {
+        .newsletter-form {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            &__btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.banner {
+        // height: calc(100vh + 150px);
+        min-height: 100vh;
+
+        .banner__subtitle {
+            margin-bottom: 33px;
+        }
+
+        .banner-form {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+
+    section.about-us {
+        .about-us__wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 3fr;
+        }
+    }
+
+    section.feedback {
+        .feedback-card {
+            grid-template-columns: 1fr;
+            grid-template-rows: 125px 1fr;
+            justify-items: center;
+            gap: 0;
+        }
+    }
+
+    section.price {
+        .price-card {
+            text-align: center;
+            height: auto;
+            // align-content: center;
+            align-items: center;
+            padding: 20px 0;
+
+        }
+
+        .price-card__price,
+        .price-card__title,
+        .price-card__time {
+            position: static;
+            top: 0;
+            left: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    section.how-work {
+        .how-work__step-list {
+            grid-template-columns: 1fr;
+
+            .step-item--arrow::before {
+                display: none;
+            }
+        }
+    }
+}

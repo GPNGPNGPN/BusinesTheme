@@ -1,0 +1,147 @@
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+.global-form {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.global-form__wrapper {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 13px;
+        left: 10px;
+        font-family: 'Font Awesome 6 Free';
+        color: #6e6e6e;
+        width: 15px;
+        height: 15px;
+        font-size: 18px;
+
+    }
+
+    &--name::before {
+        content: "\f007";
+    }
+}
+
+.global-form__input {
+    font-family: $open-sans;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 40px;
+    font-family: $open-sans;
+    font-size: 16px;
+    color: #a9a9a9;
+    caret-color: $primery-bg-color;
+    background-color: #fff;
+    height: 46px;
+
+    &::placeholder {
+        font-size: inherit;
+        color: inherit;
+    }
+}
+
+.global-form__btn {
+    height: 46px;
+    border: none;
+}
+
+
+
+.global__title {
+    text-align: center;
+    font-family: $lato;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 9px;
+}
+
+.global__subtitle {
+    text-align: center;
+    font-family: $open-sans;
+    font-size: 18px;
+}
+
+
+.global__text {
+    font-size: 16px;
+    font-family: $open-sans;
+    color: #7b7b7b;
+}
+
+.global__title--light,
+.global__subtitle--light,
+.global__text--light {
+    color: #ffffff;
+}
+
+
+.global__subtitle--dark,
+.global__subtitle--dark,
+.global__text--dark {
+    color: $primery-text-color;
+}
+
+
+.global__btn {
+    display: block;
+    font-family: $lato;
+    color: #ffffff;
+    background-color: $secondary-color;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    transition: all .3s;
+    width: fit-content;
+    font-size: 16px;
+    cursor: pointer;
+
+    &--submit {
+        min-width: 204px;
+    }
+
+    &:focus {
+        outline: 0
+    }
+
+    &:hover {
+        transform: translate(-5px, -5px);
+        box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+        color: rgba(255, 255, 255, 0.7);
+        transform: translate(-2px, -2px);
+        box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.global-nav__list {
+    .nav__link {
+        display: block;
+        color: #868686;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 15px 20px;
+        transition: all 0.3s;
+        line-height: 20px;
+
+        &:hover {
+            color: #000000;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $secondary-color;
+        }
+    }
+}

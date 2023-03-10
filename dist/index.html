@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/itc-slider.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+    <title> </title>
+</head>
+
+<body>
+    <div class="modal">
+        <a class="modal__close-area">wefwef</a>
+        <div class="modal__menu">
+            <h3 class="modal__title global__title">menu</h3>
+            <nav class="modal__nav modal-nav">
+                <ul class="modal-nav__list global-nav__list">
+                    <li class="nav__item"><a class="nav__link global__subtitle" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="nav__link global__subtitle" href="#service">Service</a></li>
+                    <li class="nav__item"><a class="nav__link global__subtitle" href="#about-us">About us</a></li>
+                    <li class="nav__item"><a class="nav__link global__subtitle" href="#price">Pricing Table</a></li>
+                    <li class="nav__item"><a class="nav__link global__subtitle" href="#how-work">How it work</a></li>
+                    <li class="nav__item"><a class="nav__link global__subtitle" href="#feedback">Happy Clients</a></li>
+                    <li class="nav__item"><a class="nav__link global__subtitle" href="#newsletter">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__logo">
+                <a class="logo__link" href="#"><img src="images/header-logo.png" alt="logo"></a>
+            </div>
+            <nav class="header__nav">
+                <ul class="header-nav__list global-nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#service">Service</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#about-us">About us</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#price">Pricing Table</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#how-work">How it work</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#feedback">Happy Clients</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#newsletter">Contact Us</a></li>
+                    <a class="nav__burger"><i></i></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner " id="home">
+            <div class="banner__wrapper wrapper">
+                <h1 class="banner__title wow fadeInDown">Boost up your Local business</h1>
+                <p class="banner__subtitle wow fadeInDown" data-wow-delay="0.2s">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem
+                    Ipsum typesetting
+                </p>
+                <form class="banner__form banner-form global-form" method="post" id="banner-form "
+                    enctype="multipart/form-data">
+                    <input type="hidden" name="isTopForm" value="true">
+                    <div class="banner-form__item global-form__item wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="global-form__wrapper global-form__wrapper--name">
+                            <input class="banner-form__input global-form__input global-form__input--name" type="text"
+                                name="name" placeholder="Full Name" value="John Doe" required>
+                        </div>
+                    </div>
+                    <div class="banner-form__item global-form__item wow fadeInLeft" data-wow-delay="0.4s">
+                        <div class="global-form__wrapper global-form__wrapper--name">
+                            <input class="banner-form__input global-form__input global-form__input--email" type="email"
+                                name="email" placeholder="Email Address" value="john_doe@mail.exmpl" required>
+                        </div>
+                    </div>
+                    <div class="banner-form__item global-form__item wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="global-form__wrapper global-form__wrapper--name">
+                            <input class="banner-form__input global-form__input global-form__input--" type="tel"
+                                name="tel" placeholder="Phone Number" value="81234567890" required>
+                        </div>
+                    </div>
+                    <div class="banner-form__item global-form__item wow fadeInRight" data-wow-delay="0.6s">
+                        <input class="banner-form__btn global-form__btn global__btn global__btn--submit" type="submit"
+                            value="Request a quote">
+                    </div>
+                </form>
+            </div>
+            <div class="itc-slider wow fadeInUp" data-wow-delay="0.8s">
+                <div class="itc-slider__wrapper">
+                    <div class="itc-slider__items">
+                        <div class="itc-slider__item banner__image">
+                            <img src="images/header-laptop-image.png" alt="">
+                        </div>
+                        <div class="itc-slider__item banner__image">
+                            <img src="images/header-laptop-image.png" alt="">
+                        </div>
+                        <div class="itc-slider__item banner__image">
+                            <img src="images/header-laptop-image.png" alt="">
+                        </div>
+                    </div>
+                    <ol class="itc-slider__indicators">
+                        <li class="itc-slider__indicator" data-slide-to="0"></li>
+                        <li class="itc-slider__indicator" data-slide-to="1"></li>
+                        <li class="itc-slider__indicator" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section id="service" class="service">
+            <div class="wrapper">
+                <h2 class="service__title global__title global__title--dark wow fadeInUp">Our Services</h2>
+                <p class="service__subtitle global__subtitle global__subtitle--dark wow fadeInUp" data-wow-delay="0.2s">
+                    Lorem Ipsum is simply
+                    dummy Business
+                    industry</p>
+                <div class="service__items">
+                    <div class="service__item service-item wow fadeInLeft" data-wow-delay="0.3s">
+                        <!-- <i class="fa fa-clock-o service-item__icon" aria-hidden="true"></i> -->
+                        <i class="fa fa-camera-retro service-item__icon aria-hidden=" true""></i>
+                        <h3 class="service-item__title">Font-Awesome Icons</h3>
+                        <p class="service-item__text global__text global__text--dark">Lorem Ipsum is simply dummy text
+                            of
+                            the printing and
+                            typesetting ind
+                            ustry. Lorem Ipsum has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer.</p>
+                    </div>
+                    <div class="service__item service-item wow fadeInRight" data-wow-delay="0.3s">
+                        <i class="fa fa-graduation-cap service-item__icon" aria-hidden="true"></i>
+                        <h3 class="service-item__title">Working Contact form</h3>
+                        <p class="service-item__text global__text global__text--dark">Many desktop publishing packages
+                            and
+                            web page editors now
+                            use Lorem
+                            Ipsum
+                            as their default model text, and a search for
+                            'lorem ipsum' will un
+                            cover many web sites still in their infancy</p>
+                    </div>
+                    <div class="service__item service-item wow fadeInLeft" data-wow-delay="0.5s">
+                        <i class="fa fa-hand-spock-o service-item__icon" aria-hidden="true"></i>
+                        <h3 class="service-item__title">Friendly Code</h3>
+                        <p class="service-item__text global__text global__text--dark">Finibus Bonorum et Malorum" by
+                            Cicero
+                            are also reproduced
+                            in their
+                            exact original form, accompanied by English versions from the 1914 translation by H. Rackham
+                        </p>
+                    </div>
+                    <div class="service__item service-item wow fadeInRight" data-wow-delay="0.5s">
+                        <i class="fa fa-cog service-item__icon" aria-hidden="true"></i>
+                        <h3 class="service-item__title">Fully Responsive Design</h3>
+                        <p class="service-item__text global__text global__text--dark">Many desktop publishing packages
+                            and
+                            web page editors now
+                            use Lorem
+                            Ipsum
+                            as their default model text, and a search for
+                            'lorem ipsum' will uncover many web sites still in their infancy</p>
+                    </div>
+                    <div class="service__item service-item wow fadeInLeft" data-wow-delay="0.7s" data-wow-offset="-100">
+                        <i class="fa fa-rocket service-item__icon" aria-hidden="true"></i>
+                        <h3 class="service-item__title">Retina Ready icons here</h3>
+                        <p class="service-item__text global__text global__text--dark">There are many variations of
+                            passages
+                            of Lorem Ipsum
+                            available, but
+                            the
+                            majority have suffered alteration in some form,
+                            by injected humour
+                            or randomised words which don't look even slightly believable.
+                            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                        </p>
+                    </div>
+                    <div class="service__item service-item wow fadeInRight" data-wow-delay="0.7s"
+                        data-wow-offset="-100">
+                        <i class="fa fa-usd service-item__icon" aria-hidden="true"></i>
+                        <h3 class="service-item__title">Flat trendy landing page Design</h3>
+                        <p class="service-item__text global__text global__text--dark">Lorem Ipsum is simply dummy text
+                            of
+                            the printing and
+                            typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard
+                            dummy text ever since
+                            the 1500s, when an unknown printer.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-us" class="about-us">
+            <div class="about-us__wrapper">
+                <div class="about-us__image wow fadeInLeft">
+                </div>
+                <div class="about-us__item">
+                    <h2 class="about-us__title global__title global__title--light  wow fadeInRight">ABout us</h2>
+                    <p class="about-us__text global__text global__text--light  wow fadeInRight" data-wow-delay="0.2s">
+                        Lorem
+                        Ipsum is simply dummy
+                        text of the
+                        printing
+                        and typesetting
+                        industry. Lorem Ipsum has been
+                        the
+                        industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                        to
+                        make
+                        a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining
+                        essentially
+                        unchanged. It was popularised in the ore recently with desktop publishing software like Aldus
+                        PageMaker
+                        including
+                        versions of Lorem Ipsum</p>
+                    <a class="about-u__btn global__btn wow fadeInRight" data-wow-delay="0.4s">Read more</a>
+                </div>
+            </div>
+        </section>
+        <section id="price" class="price">
+            <div class="wrapper">
+                <h2 class="price__title global__title global__title--dark wow fadeInUp">Choose your price</h2>
+                <p class="price__subtitle global__subtitle global__subtitle--dark wow fadeInUp" data-wow-delay="0.2s">
+                    Lorem
+                    Ipsum is simply dummy
+                    text of the printing
+                    typesetting.</p>
+                <div class="price__list">
+                    <div class="price__card price-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="price-card__title ">Basic plan</div>
+                        <div class="price-card__price"><sup class="sup-dolor">$</sup>22</div>
+                        <div class="price-card__time">per month</div>
+                        <div class="price-card__descr-item">1 Account</div>
+                        <div class="price-card__descr-item">8 hour support</div>
+                        <div class="price-card__descr-item">Custom Cloud Services</div>
+                        <a class="price-card__btn global__btn">Get Started</a>
+                    </div>
+                    <div class="price__card price-card active  wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-card__title">Premium plan</div>
+                        <div class="price-card__price"><sup class="sup-dolor">$</sup>42</div>
+                        <div class="price-card__time">per month</div>
+                        <div class="price-card__descr-item">2 Account</div>
+                        <div class="price-card__descr-item">100MB Storage</div>
+                        <div class="price-card__descr-item">Custom Cloud Services</div>
+                        <a class="price-card__btn global__btn">Get Started</a>
+                    </div>
+                    <div class="price__card price-card wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="price-card__title">Gold plan</div>
+                        <div class="price-card__price"><sup class="sup-dolor">$</sup>62</div>
+                        <div class="price-card__time">per month</div>
+                        <div class="price-card__descr-item">8 Account</div>
+                        <div class="price-card__descr-item">24 hour support</div>
+                        <div class="price-card__descr-item">Custom Cloud Services</div>
+                        <a class="price-card__btn global__btn">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section id="how-work" class="how-work">
+            <div class="wrapper">
+                <h2 class="how-work__title global__title global__title--dark wow fadeInUp">How it works</h2>
+                <p class="how-work__subtitle global__subtitle global__subtitle--dark wow fadeInUp"
+                    data-wow-delay="0.2s">
+                    Lorem Ipsum is simply
+                    dummy Business industry</p>
+                <div class="how-work__step-list wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="step-list__item step-item step-item--arrow">
+                        <i class="fa fa-headphones step-item__icon" aria-hidden="true"></i>
+                        <h3 class="step-item__title">Step 1</h3>
+                        <p class="step-item__text global__text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting ind
+                            ustry. Lorem Ipsum has been</p>
+                    </div>
+                    <div class="step-list__item step-item">
+                        <i class="fa fa-unlock-alt step-item__icon" aria-hidden="true"></i>
+                        <h3 class="step-item__title">Step 2</h3>
+                        <p class="step-item__text global__text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting ind
+                            ustry. Lorem Ipsum has been</p>
+                    </div>
+                    <div class="step-list__item step-item step-item--arrow">
+                        <i class="fa fa-cloud-upload step-item__icon" aria-hidden="true"></i>
+                        <h3 class="step-item__title">Step 3</h3>
+                        <p class="step-item__text global__text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting ind
+                            ustry. Lorem Ipsum has been</p>
+                    </div>
+                    <div class="step-list__item step-item">
+                        <i class="fa fa-thumbs-up step-item__icon" aria-hidden="true"></i>
+                        <h3 class="step-item__title">Step 4</h3>
+                        <p class="step-item__text global__text">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting ind
+                            ustry. Lorem Ipsum has been</p>
+                    </div>
+                </div>
+                <a class="how-work__btn global__btn">
+                    Get start Now
+                </a>
+            </div>
+        </section>
+        <section id="feedback" class="feedback">
+            <div class="wrapper">
+                <h2 class="feedback__title global__title global__title--light  wow fadeInUp">Happy Clients</h2>
+                <p class="feedback__subtitle global__subtitle global__subtitle--light wow fadeInUp"
+                    data-wow-delay="0.2s">We
+                    are explain
+                    who is using our business solutions</p>
+                <div class="feedback__card-list">
+                    <div class="feedback__card feedback-card wow fadeInLeft" data-wow-delay="0.3s"
+                        data-wow-offset="-50">
+                        <img class=" feedback-card__image" src="images/client-1.png" alt="client-image">
+                        <div class="feedback-card__wrapper">
+                            <p class="feedback-card__text global__text">Lorem Ipsum is simply dummy text of the printing
+                                and
+                                typesetting
+                                industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
+                                when
+                                an
+                                unknown printer took a galley of type and scrambled
+                                it to make.</p>
+                            <p class="feedback-card__author">Darwin Michle, <span
+                                    class="feedback-card__author-position">Project
+                                    manager</span></p>
+                        </div>
+                    </div>
+                    <div class="feedback__card feedback-card wow fadeInRight" data-wow-delay="0.3s"
+                        data-wow-offset="-50">
+                        <img class=" feedback-card__image" src="images/client-2.png" alt="client-image">
+                        <div class="feedback-card__wrapper">
+                            <p class="feedback-card__text global__text">Lorem Ipsum is simply dummy text of the printing
+                                and
+                                typesetting industry. Lorem Ipsum has been the industrystandard
+                                dummy text ever since the 1500s, wen an unknown printer took a galley of type and
+                                scrambled
+                                to make a type specimen book.</p>
+                            <p class="feedback-card__author">
+                                Madam Elisabath, <span class="feedback-card__author-position">Creative
+                                    Director</span></p>
+                        </div>
+                    </div>
+                    <div class="feedback__card feedback-card wow fadeInLeft" data-wow-delay="0.5s"
+                        data-wow-offset="-50">
+                        <img class=" feedback-card__image" src="images/client-3.png" alt="client-image">
+                        <div class="feedback-card__wrapper">
+                            <p class="feedback-card__text global__text">Lorem Ipsum is simply dummy text of the printing
+                                and
+                                typesetting
+                                industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s,
+                                when
+                                an
+                                unknown printer took a galley of type and scrambled
+                                it to make.</p>
+                            <p class="feedback-card__author">Clips arter, <span
+                                    class="feedback-card__author-position">Lipsum
+                                    directer</span></p>
+                        </div>
+                    </div>
+                    <div class="feedback__card feedback-card wow fadeInRight" data-wow-delay="0.5s"
+                        data-wow-offset="-50">
+                        <img class=" feedback-card__image" src="images/client-4.png" alt="client-image">
+                        <div class="feedback-card__wrapper">
+                            <p class="feedback-card__text global__text">Lorem Ipsum is simply dummy text of the printing
+                                and
+                                typesetting industry. Lorem Ipsum has been the industrystandard
+                                dummy text ever since the 1500s, wen an unknown printer took a galley of type and
+                                scrambled
+                                to make a type specimen book.</p>
+                            <p class="feedback-card__author">zam cristafr, <span
+                                    class="feedback-card__author-position">manager</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter" class="newsletter">
+            <div class="wrapper">
+                <h2 class="newsletter__title global__title global__title--dark wow fadeInUp">newsletter</h2>
+                <p class="newsletter__subtitle global__subtitle global__subtitle--dark wow fadeInUp"
+                    data-wow-delay="0.2s">
+                    Lorem Ipsum is simply
+                    dummy Business industry</p>
+                <form class="newsletter__form newsletter-form global-form wow fadeInUp" data-wow-delay="0.5s" action="">
+                    <input type="hidden" name="isTopForm" value="false">
+                    <div class="newsletter-form__item global-form__item">
+                        <div class="global-form__wrapper global-form__wrapper--name">
+                            <input class="newsletter-form__input global-form__input global-form__input--name"
+                                type="text" name="name" placeholder="Full Name" value="Bob Doe">
+                        </div>
+                    </div>
+                    <div class="newsletter-form__item global-form__item">
+                        <div class="global-form__wrapper global-form__wrapper--name">
+                            <input class="newsletter-form__input global-form__input global-form__input--email"
+                                type="email" name="email" placeholder="Email Address" value="bob_doe@mail.exmpl">
+                        </div>
+                    </div>
+                    <div class="newsletter-form__item global-form__item">
+                        <input class="newsletter-form__btn global-form__btn global__btn global__btn--submit"
+                            type="submit" value="Request a quote">
+                    </div>
+                </form>
+            </div>
+            <div class="newsletter__contacts  wow fadeInUp" data-wow-delay="0.9s">
+                <div class="newsletter__address newsletter-address wow fadeIn" data-wow-delay="2.0s"
+                    data-wow-duration="1.5s">
+                    <h3 class="newsletter-address__title global__title global__title--light">Address</h3>
+                    <p class="newsletter-address__item">Business street</p>
+                    <p class="newsletter-address__item">Second north section</p>
+                    <p class="newsletter-address__item">Bavani nagar. 88769</p>
+                    <p class="newsletter-address__item">Call: <a href="tel:+9879976999">+987-9976-999</a></p>
+                    <a href="#" class="newsletter-address__link">info@businessface.com</a>
+                </div>
+            </div>
+        </section>
+        <section class="footer-nav">
+            <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#home">Home</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#service">Service</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#about-us">About us</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#price">Pricing Table</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#how-work">How it work</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#feedback">Happy Clients</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#newsletter">Contact Us</a></li>
+            </ul>
+            <a class="footer-nav__phone-number" href="tel:+9879976999"><i class="fa fa-phone"></i> +987 9976 999</a>
+            <ul class="footer-nav___social-list">
+                <li class="footer-nav___social-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="footer-nav___social-item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="footer-nav___social-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li class="footer-nav___social-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__copyright">All contents © copyright 2023 Business Theme. All rights reserved Designed by
+            :
+            akhilwebfolio</h2>
+    </footer>
+</body>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+
+<!-- <script src="js/itc-slider.js"></script> -->
+<script src="js/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-scrollspy@3.0.3/dist/vanillajs-scrollspy.min.js"></script>
+
+</html>
