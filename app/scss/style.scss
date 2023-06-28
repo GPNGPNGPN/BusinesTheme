@@ -1,16 +1,9 @@
 @import "vars";
 @import "fonts";
 @import "global";
-// @import "libs";
-@import "dark-theme";
-@import "light-theme";
+@import "libs";
 @import "reset";
 @import "media";
-
-// main {
-//     display: flex;
-//     flex-direction: column;
-// }
 
 .header {
     background-color: #ffffff;
@@ -177,7 +170,6 @@
     width: 100%;
     padding-top: 130px;
     border-bottom: 110px solid #ffffff;
-    // min-height: 100vh;
     height: 100vh;
     background: $primery-bg-color;
     text-align: center;
@@ -247,6 +239,8 @@
 
     &-item {
         position: relative;
+        display: flex;
+        flex-direction: column;
 
 
         &__icon {
@@ -273,10 +267,12 @@
         }
 
         &__title {
+            min-height: 50px;
             font-family: $lato;
             font-weight: 700;
             color: $primery-text-color;
             text-transform: uppercase;
+            padding-top: 10px;
             padding-left: 80px;
             margin-bottom: 25px;
         }

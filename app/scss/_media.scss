@@ -106,10 +106,15 @@
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px),
+screen and (max-height: 700px) {
     section.service {
         .service__items {
             grid-template-columns: 1fr;
+        }
+
+        .service-item__text {
+            padding-left: 0;
         }
     }
 
@@ -164,7 +169,6 @@
 
 @media screen and (max-width: 500px) {
     section.banner {
-        // height: calc(100vh + 150px);
         min-height: 100vh;
 
         .banner__subtitle {
@@ -197,7 +201,6 @@
         .price-card {
             text-align: center;
             height: auto;
-            // align-content: center;
             align-items: center;
             padding: 20px 0;
 
@@ -215,6 +218,14 @@
 }
 
 @media screen and (max-width: 400px) {
+    .global__title {
+        font-size: 35px;
+    }
+
+    .global__subtitle {
+        font-size: 16px;
+    }
+
     section.how-work {
         .how-work__step-list {
             grid-template-columns: 1fr;
@@ -222,6 +233,19 @@
             .step-item--arrow::before {
                 display: none;
             }
+        }
+    }
+}
+
+@media screen and (max-height: 560px) {
+
+    div .modal {
+        &__title {
+            margin-bottom: 5px;
+        }
+
+        &-nav__list .nav__link {
+            padding: 10px;
         }
     }
 }

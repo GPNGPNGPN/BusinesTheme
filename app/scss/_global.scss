@@ -1,4 +1,5 @@
 .wrapper {
+    width: 90%;
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 35px;
@@ -28,6 +29,12 @@
 
     &--name::before {
         content: "\f007";
+    }
+    &--email::before {
+        content: "\f003";
+    }
+    &--phone::before {
+        content: "\f0f3";
     }
 }
 
