@@ -91,13 +91,19 @@ function hosting() {
     var conn = ftp.create({
         host: 'vh372.timeweb.ru',
         user: 'ch44857',
-        password: '6XwNiV6PdWTi',
+        password: fs.readFileSync("E:\Desktop on E\Landing_and_features/key.txt", "utf8"),
         parallel: 10,
         log: gutil.log
     });
 
-    return src('dist/**')
-        .pipe(conn.dest('public_html'));
+    var globs = [
+        'dist/**/*.*'
+    ];
+
+    return src(globs)
+        .pipe(conn.newer('/public_html'))
+        .pipe(conn.dest('/public_html'));
+
 }
 
 
